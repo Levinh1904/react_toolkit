@@ -1,0 +1,36 @@
+.footer{
+    padding-top: 60px;
+    padding-bottom: 30px;
+    background: var(--primary-color);
+}
+.footer__text{
+    line-height: 30px;
+    color: rgb(186, 189, 191);
+}
+.foooter__quick-links ul li{
+    background: transparent !important;
+}
+.foooter__quick-links ul li a{
+    color: antiquewhite;
+}
+.quick__links-title{
+    margin-bottom: 30px;
+    color: aliceblue;
+    font-size: 1.1rem;
+}
+.footer__contact li span,
+.footer__contact li p{
+    color: antiquewhite;
+}
+.footer__contact li span{
+    font-size: 1.2rem;
+}
+.footer__contact li p{
+    font-size: 0.9rem;
+}
+.footer__coppyright{
+    color: antiquewhite;
+    font-size: 0.9rem;
+    margin-top: 40px;
+    text-align: center;
+}
