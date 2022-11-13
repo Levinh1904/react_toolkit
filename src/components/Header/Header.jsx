@@ -5,6 +5,7 @@ import { Container, Row } from 'reactstrap'
 import { NavLink } from 'react-router-dom'
 import logo from "../../assets/images/eco-logo.png"
 import userIcon from "../../assets/images/user-icon.png"
+import { useSelector } from 'react-redux'
 const nav__links = [
   {
     path: 'home',
@@ -22,6 +23,7 @@ const nav__links = [
 const Header = () => {
   //show menu down
   const headerRef = useRef(null);
+  const totalQuantity = useSelector(state => state.cart.totalQuantity)
   const menuRef = useRef(null)
   const stickyHeaderFunc = () => {
     window.addEventListener('scroll', () => {
@@ -64,7 +66,7 @@ const Header = () => {
             </span>
             <span className="cart_icon">
               <i class="ri-shopping-bag-line"></i>
-              <span className="badge">1</span>
+              <span className="badge">{totalQuantity}</span>
             </span>
             <span>
               <motion.img whileTap={{ scale: 1.2 }} src={userIcon} alt="" />
