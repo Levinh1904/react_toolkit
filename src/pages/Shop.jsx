@@ -38,7 +38,7 @@ const Shop = () => {
     <section>
       <Container>
         <Row>
-          <Col lg='3' md='3'>
+          <Col lg='3' md='6'>
             <div className="filter__widget">
               <select onChange={handleFilter}> 
                 <option>Filer Buy Category</option>
@@ -50,7 +50,7 @@ const Shop = () => {
               </select>
             </div>
           </Col>
-          <Col lg='3' md='3'>
+          <Col lg='3' md='6' className="">
           <div className="filter__widget">
               <select>
                 <option>Sort Buy </option>
@@ -59,7 +59,7 @@ const Shop = () => {
               </select>
             </div>
           </Col>
-          <Col lg='6' md='6'>
+          <Col lg='6' md='12'>
             <div className="search__box">
                 <input type="text" placeholder="Search........" onChange={handSearch}/>
                 <span>
